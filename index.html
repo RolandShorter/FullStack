@@ -9,8 +9,39 @@
 </head>
 
 <body>
-    <script>
+    <div id="name"></div>
 
+
+    <script>
+        /*         if (typeof (Storage) !== "undefined") {
+            localStorage.setItem('name', 'john Doe');
+
+            console.log(localStorage.name);
+
+            if (localStorage.name) {
+                document.getElementById('name').innerHTML = localStorage.getItem('name');
+            } else {
+                document.getElementById('name').innerHTML = 'no name found';
+            }
+        } else {
+            console.log('localStorage Not Available');
+
+        }
+         */
+        if (typeof (Storage) !== "undefined") {
+            sessionStorage.setItem('name', 'matt smith');
+
+            console.log(sessionStorage.name);
+
+            if (sessionStorage.name) {
+                document.getElementById('name').innerHTML = sessionStorage.getItem('name');
+            } else {
+                document.getElementById('name').innerHTML = 'no name found';
+            }
+        } else {
+            console.log('sessionStorage Not Available');
+
+        }
     </script>
 </body>
 
